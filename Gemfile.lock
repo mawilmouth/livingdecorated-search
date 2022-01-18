@@ -108,6 +108,7 @@ GEM
       edge_rider (>= 0.2.5)
     minitest (5.15.0)
     msgpack (1.4.2)
+    mysql2 (0.5.3)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -198,6 +199,7 @@ DEPENDENCIES
   factory_bot_rails
   figaro
   minidusen
+  mysql2 (~> 0.5.2)
   puma (~> 5.0)
   rails (~> 7.0.1)
   rspec-rails (~> 5.0.0)
