@@ -26,5 +26,5 @@ production:
   reconnect: false
   pool: 5
   database: <%= Figaro.env.db %>
-  username: <%= Figaro.env.db_userame %>
+  username: <%= Figaro.env.db_username %>
   password: <%= Figaro.env.db_password %>
