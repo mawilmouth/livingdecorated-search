@@ -41,7 +41,7 @@ module Api::V1
       end
 
       it 'returns the expected amount of posts' do
-        expect(json_response.size).to eq 10
+        expect(json_response.size).to eq 15
       end
 
       context 'passing the fields param' do

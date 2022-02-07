@@ -36,7 +36,7 @@ module Api::V1
     def posts
       return @posts if defined? @posts
 
-      @posts = Post.published.limit(10)
+      @posts = Post.published
 
       @posts = rendering_options[:only].present? ?
         posts.select(rendering_options[:only]) : posts
