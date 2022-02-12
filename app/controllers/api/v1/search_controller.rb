@@ -36,7 +36,7 @@ module Api::V1
     def posts
       return @posts if defined? @posts
 
-      @posts = Post.published
+      @posts = Post.posts.published.order_by_published
 
       @posts = rendering_options[:only].present? ?
         posts.select(rendering_options[:only]) : posts

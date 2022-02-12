@@ -8,6 +8,7 @@ module Api::V1
 
     describe '#index' do
       let!(:posts) { create_list(:post, 15, :published, title: '9876') }
+      let!(:page) { create_list(:post, 15, :published, :as_page) }
       let!(:post_one) { create(:post, title: 'test') }
       let!(:post_two) { create(:post, :published, title: '1234') }
 
